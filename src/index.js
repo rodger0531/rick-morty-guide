@@ -7,7 +7,7 @@ import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { ApolloProvider } from "@apollo/client/react";
 
 const client = new ApolloClient({
-  uri: "https://api.spacex.land/graphql/",
+  uri: "https://rickandmortyapi.com/graphql",
   cache: new InMemoryCache({
     addTypename: false,
   }),

@@ -1,12 +1,10 @@
 import "./App.css";
-import RocketBar from "./rockets/rocket-bar";
+import CharacterList from "./characters/character-list";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <RocketBar />
-      </header>
+      <CharacterList />
     </div>
   );
 }
