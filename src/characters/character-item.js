@@ -22,7 +22,7 @@ export const CharacterItem = ({
         color={COLOR_PALETTE.YELLOW}
         className="text-lg"
       >
-        <img src={image} alt="" className="rounded-xl inline-block" />
+        <img src={image} alt="Avatar" className="rounded-xl inline-block" />
       </Popover>
       <p className="truncate" style={{ color: COLOR_PALETTE.PINK }}>
         {name}
