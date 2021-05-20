@@ -37,16 +37,16 @@ const CharacterList = () => {
     data && setList(data.characters.results);
   }, [data]);
   return (
-    <div className="h-full">
+    <div className="h-full flex flex-col justify-between">
       <Filter
         setFilterSpecies={setFilterSpecies}
         setCurrentPage={setCurrentPage}
       />
-      <div className="text-base">
+      <div className="">
         {error && <p>`Error! ${error.message}`</p>}
-        <div className="grid grid-cols-5 gap-4">
+        <div className="grid grid-cols-5 gap-6">
           {list?.map((item) => (
-            <div key={item.id} className="w-32">
+            <div key={item.id} className="w-28 lg:w-36">
               <CharacterItem data={item} />
             </div>
           ))}

@@ -10,11 +10,10 @@ export const Controls = ({ info, loading, currentPage, setCurrentPage }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [info]);
   const fetchData = (page, size) => {
-    console.log("p", page);
     setCurrentPage(page);
   };
   return (
-    <div className="fixed inline-block bottom-0 right-0 left-0 mb-5">
+    <div className="my-5">
       <Pagination
         defaultCurrent={1}
         total={total}
