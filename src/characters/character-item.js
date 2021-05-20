@@ -3,7 +3,7 @@ import { Popover } from "antd";
 import { COLOR_PALETTE } from "../core/constants";
 
 export const CharacterItem = ({
-  data: { image, name, species, status, gender },
+  data: { image, name, species, status, gender, location },
 }) => {
   const content = (
     <div className="text-base text-yellow-900">
@@ -12,6 +12,8 @@ export const CharacterItem = ({
       </p>
       <p>Gender: {gender}</p>
       <p>Species: {species}</p>
+      <p>Location: {location.name}</p>
+      <p>Dimension: {location.dimension || "unknown"}</p>
       <p>Status: {status}</p>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { Select } from "antd";
 const { Option } = Select;
 
-export const SelectField = ({ data, width = 120, onChange }) => {
+export const SelectField = ({ data, onChange }) => {
   const onFilterChange = (val) => {
     onChange(val);
   };
@@ -10,7 +10,7 @@ export const SelectField = ({ data, width = 120, onChange }) => {
     <>
       <Select
         defaultValue={data[0]}
-        style={{ width }}
+        style={{ minWidth: "160px" }}
         onChange={onFilterChange}
       >
         <Option>All</Option>s
