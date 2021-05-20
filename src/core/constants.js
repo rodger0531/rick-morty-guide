@@ -11,4 +11,11 @@ module.exports = {
     "Planet",
     "unknown",
   ],
+  COLOR_PALETTE: {
+    BROWN: "#44281d",
+    SALMON: "#e4a788",
+    YELLOW: "#f0e14a",
+    LIME: "#97ce4c",
+    PINK: "#e89ac7",
+  },
 };

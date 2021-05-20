@@ -1,5 +1,6 @@
 import React from "react";
 import { Popover } from "antd";
+import { COLOR_PALETTE } from "../core/constants";
 
 export const CharacterItem = ({
   data: { image, name, species, status, gender },
@@ -16,10 +17,16 @@ export const CharacterItem = ({
   );
   return (
     <>
-      <Popover content={content} color="#f0e14a" className="text-lg">
+      <Popover
+        content={content}
+        color={COLOR_PALETTE.YELLOW}
+        className="text-lg"
+      >
         <img src={image} alt="" className="rounded-xl inline-block" />
       </Popover>
-      <p className="truncate">{name}</p>
+      <p className="truncate" style={{ color: COLOR_PALETTE.PINK }}>
+        {name}
+      </p>
     </>
   );
 };
