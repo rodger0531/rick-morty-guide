@@ -2,14 +2,14 @@ import React from "react";
 import { Select } from "antd";
 const { Option } = Select;
 
-export const SelectField = ({ data, onChange }) => {
+export const SelectField = ({ data, placeholder, onChange }) => {
   const onFilterChange = (val) => {
     onChange(val);
   };
   return (
     <>
       <Select
-        defaultValue={data[0]}
+        placeholder={placeholder}
         style={{ minWidth: "160px" }}
         onChange={onFilterChange}
       >

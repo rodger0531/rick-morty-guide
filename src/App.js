@@ -6,7 +6,7 @@ import rickAndMortyLogo from "./logo.png";
 const { Content, Sider } = Layout;
 function App() {
   return (
-    <Layout className="min-h-full">
+    <Layout className="min-h-screen">
       <Sider
         width="300px"
         className="flex justify-center"

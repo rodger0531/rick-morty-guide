@@ -9,10 +9,20 @@ export const Filter = ({ setFilterSpecies, setCurrentPage }) => {
     setCurrentPage(0);
   };
 
+  const placeholder = (
+    <div className="flex items-center">
+      <FilterFilled className="mr-3" />
+      <span>Filter by species</span>
+    </div>
+  );
+
   return (
-    <div className="my-5 text-base flex justify-center items-center">
-      <FilterFilled className="mr-3 text-xl" />
-      <SelectField data={SPECIES_TYPE} onChange={onChange} />
+    <div className="my-5 text-base">
+      <SelectField
+        data={SPECIES_TYPE}
+        placeholder={placeholder}
+        onChange={onChange}
+      />
     </div>
   );
 };
