@@ -45,9 +45,7 @@ const EpisodePage = () => {
 
   return (
     <div className="h-full w-full">
-      <EpisodesList></EpisodesList>
-      {/* {!data?.episodes.info.next &&
-        data.episodes.results.map((episode) => <p>{episode.name}</p>)} */}
+      <EpisodesList data={data}  loading={loading}/>
     </div>
   );
 };

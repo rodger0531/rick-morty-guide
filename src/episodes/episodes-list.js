@@ -1,27 +1,30 @@
 import React from "react";
 import "./episode-list.css";
 import { Tabs } from "antd";
+import { EpisodeItem } from "./episode-item";
 const { TabPane } = Tabs;
 
-export const EpisodesList = () => {
+export const EpisodesList = ({ data, loading }) => {
+  const seasonsList = data?.episodes.results.reduce((t,x)=>{
+    const season = x.episode.slice(0,3)
+    if(t[season]) {
+      t[season].push(x)
+    } else {
+      t[season] = [x]
+    }
+    
+    return t
+  }, {})
   return (
     <div className="card-container m-10">
       <Tabs type="card">
-        <TabPane tab="Tab Title 1" key="1">
-          <p>Content of Tab Pane 1</p>
-          <p>Content of Tab Pane 1</p>
-          <p>Content of Tab Pane 1</p>
+        { seasonsList && 
+          Object.entries(seasonsList).map(([season, episodes], idx)=>(
+            <TabPane tab={season} key={idx+1}>
+              <EpisodeItem episodes={episodes} />
         </TabPane>
-        <TabPane tab="Tab Title 2" key="2">
-          <p>Content of Tab Pane 2</p>
-          <p>Content of Tab Pane 2</p>
-          <p>Content of Tab Pane 2</p>
-        </TabPane>
-        <TabPane tab="Tab Title 3" key="3">
-          <p>Content of Tab Pane 3</p>
-          <p>Content of Tab Pane 3</p>
-          <p>Content of Tab Pane 3</p>
-        </TabPane>
+          ))
+        }
       </Tabs>
     </div>
   );

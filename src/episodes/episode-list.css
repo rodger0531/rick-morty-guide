@@ -2,7 +2,7 @@
   margin: 0;
 }
 .card-container > .ant-tabs-card .ant-tabs-content {
-  min-height: 85vh;
+  height: 85vh;
   margin-top: -16px;
 }
 .card-container > .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane {
