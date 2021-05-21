@@ -2,6 +2,7 @@
   "name": "rick-and-morty",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rodger0531.github.io/rick-morty-guide/",
   "dependencies": {
     "@apollo/client": "3.3.19",
     "@craco/craco": "6.1.2",
@@ -26,7 +27,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -57,6 +60,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
+    "gh-pages": "^3.1.0",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2"
   }
