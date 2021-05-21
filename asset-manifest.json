@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rick-morty-guide/static/css/main.782738ff.chunk.css",
+    "main.css": "/rick-morty-guide/static/css/main.0701b52b.chunk.css",
     "main.js": "/rick-morty-guide/static/js/main.0c2a868f.chunk.js",
     "main.js.map": "/rick-morty-guide/static/js/main.0c2a868f.chunk.js.map",
     "runtime-main.js": "/rick-morty-guide/static/js/runtime-main.049e6566.js",
@@ -12,7 +12,7 @@
     "static/js/3.cb2545df.chunk.js.map": "/rick-morty-guide/static/js/3.cb2545df.chunk.js.map",
     "index.html": "/rick-morty-guide/index.html",
     "static/css/2.7d81263a.chunk.css.map": "/rick-morty-guide/static/css/2.7d81263a.chunk.css.map",
-    "static/css/main.782738ff.chunk.css.map": "/rick-morty-guide/static/css/main.782738ff.chunk.css.map",
+    "static/css/main.0701b52b.chunk.css.map": "/rick-morty-guide/static/css/main.0701b52b.chunk.css.map",
     "static/js/2.1428fa5e.chunk.js.LICENSE.txt": "/rick-morty-guide/static/js/2.1428fa5e.chunk.js.LICENSE.txt",
     "static/media/homeBackground.5cc6cfe1.mp4": "/rick-morty-guide/static/media/homeBackground.5cc6cfe1.mp4",
     "static/media/logo.54e125f0.png": "/rick-morty-guide/static/media/logo.54e125f0.png"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.049e6566.js",
     "static/css/2.7d81263a.chunk.css",
     "static/js/2.1428fa5e.chunk.js",
-    "static/css/main.782738ff.chunk.css",
+    "static/css/main.0701b52b.chunk.css",
     "static/js/main.0c2a868f.chunk.js"
   ]
 }
