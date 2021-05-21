@@ -46,7 +46,7 @@ const EpisodePage = () => {
 
   return (
     <div className="h-full w-full">
-      <EpisodesList data={data}  loading={loading}/>
+      <EpisodesList data={data} loading={loading} />
     </div>
   );
 };

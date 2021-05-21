@@ -17,7 +17,7 @@ export const EpisodesList = ({ data, loading }) => {
   }, {});
   return (
     <div className="card-container m-10">
-      <Tabs type="card">
+      <Tabs type="card" size="large">
         {seasonsList &&
           Object.entries(seasonsList).map(([season, episodes], idx) => (
             <TabPane tab={season} key={idx + 1} className="overflow-auto">
