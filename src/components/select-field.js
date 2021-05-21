@@ -9,6 +9,7 @@ export const SelectField = ({ data, placeholder, onChange }) => {
   return (
     <>
       <Select
+        className="mt-3 md: mt-0"
         placeholder={placeholder}
         style={{ minWidth: "160px" }}
         onChange={onFilterChange}

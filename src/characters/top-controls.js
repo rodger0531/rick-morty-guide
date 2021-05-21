@@ -23,7 +23,7 @@ export const TopControls = ({ setFilterParams, setCurrentPage }) => {
   return (
     <div className="my-5 text-base flex flex-col justify-center md:flex-row items-center">
       <Input.Search
-        className="mr-5 max-w-xs m-5"
+        className="max-w-xs mx-5"
         placeholder="Search by name"
         onSearch={(val) => onSearch({ name: val })}
         enterButton

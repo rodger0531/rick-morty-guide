@@ -1,5 +1,5 @@
 import "./App.css";
-import CharacterList from "./characters/character-list";
+import CharacterPage from "./characters";
 import { Layout, Menu } from "antd";
 import rickAndMortyLogo from "./logo.png";
 
@@ -33,7 +33,7 @@ function App() {
       </Sider>
       <Layout>
         <Content className="App">
-          <CharacterList />
+          <CharacterPage />
         </Content>
       </Layout>
     </Layout>
