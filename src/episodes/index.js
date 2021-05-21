@@ -9,6 +9,7 @@ const GET_EPISODES = gql`
         next
       }
       results {
+        id
         name
         episode
         aired: air_date
