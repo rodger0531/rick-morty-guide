@@ -19,7 +19,7 @@ const GET_EPISODE_DETAIL = gql`
 `;
 
 const EpisodeDetails = ({ episodeID, isModalVisible, handleCancel }) => {
-  const { loading, error, data } = useQuery(GET_EPISODE_DETAIL, {
+  const { loading, data } = useQuery(GET_EPISODE_DETAIL, {
     variables: {
       id: episodeID,
     },
