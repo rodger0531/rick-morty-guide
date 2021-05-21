@@ -2,8 +2,9 @@ import React from "react";
 import { SelectField } from "../components/select-field";
 import { SPECIES_TYPE } from "../core/constants";
 import { FilterFilled } from "@ant-design/icons";
+import { Input } from "antd";
 
-export const Filter = ({ setFilterSpecies, setCurrentPage }) => {
+export const TopControls = ({ setFilterSpecies, setCurrentPage }) => {
   const onChange = (species = "") => {
     setFilterSpecies(species);
     setCurrentPage(0);
@@ -16,8 +17,18 @@ export const Filter = ({ setFilterSpecies, setCurrentPage }) => {
     </div>
   );
 
+  const onSearch = (val) => {
+    console.log(val);
+  };
+
   return (
-    <div className="my-5 text-base">
+    <div className="my-5 text-base flex flex-col justify-center md:flex-row items-center">
+      <Input.Search
+        className="mr-5 max-w-xs m-5"
+        placeholder="input search text"
+        onSearch={onSearch}
+        enterButton
+      />
       <SelectField
         data={SPECIES_TYPE}
         placeholder={placeholder}

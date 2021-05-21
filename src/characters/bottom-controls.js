@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Pagination } from "antd";
 
-export const Controls = ({ info, loading, currentPage, setCurrentPage }) => {
+export const BottomControls = ({
+  info,
+  loading,
+  currentPage,
+  setCurrentPage,
+}) => {
   const [total, setTotal] = useState(0);
   useEffect(() => {
     if (info && info.count !== total) {
