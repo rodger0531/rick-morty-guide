@@ -14,6 +14,8 @@ const client = new ApolloClient({
   }),
 });
 
+document.documentElement.setAttribute("data-theme", "dark");
+
 ReactDOM.render(
   <ApolloProvider client={client}>
     <Router>
