@@ -1,11 +1,5 @@
 import "./App.css";
-import {
-  Switch,
-  Route,
-  NavLink,
-  withRouter,
-  useRouteMatch,
-} from "react-router-dom";
+import { Switch, Route, NavLink, withRouter, Redirect } from "react-router-dom";
 import CharacterPage from "./characters";
 import { Layout, Menu } from "antd";
 import rickAndMortyLogo from "./logo.png";
@@ -52,15 +46,10 @@ function App({ location }) {
       <Layout>
         <Content className="App">
           <Switch>
-            <Route exact path={paths[0]}>
-              <Home />
-            </Route>
-            <Route exact path={paths[1]}>
-              <CharacterPage />
-            </Route>
-            <Route exact path={paths[2]}>
-              <EpisodePage />
-            </Route>
+            <Route exact path={paths[0]} component={Home} />
+            <Route path={paths[1]} component={CharacterPage} />
+            <Route path={paths[2]} component={EpisodePage} />
+            <Route render={() => <Redirect to={{ pathname: "/" }} />} />
           </Switch>
         </Content>
       </Layout>
