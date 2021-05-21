@@ -8,9 +8,6 @@ module.exports = {
         42: "10.5rem",
       },
     },
-    screens: {
-      mobile: { max: "767px" },
-    },
   },
   variants: {
     extend: {},
