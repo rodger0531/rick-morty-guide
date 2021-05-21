@@ -4,9 +4,12 @@ import { SPECIES_TYPE } from "../core/constants";
 import { FilterFilled } from "@ant-design/icons";
 import { Input } from "antd";
 
-export const TopControls = ({ setFilterSpecies, setCurrentPage }) => {
-  const onChange = (species = "") => {
-    setFilterSpecies(species);
+export const TopControls = ({ setFilterParams, setCurrentPage }) => {
+  const onSearch = (input) => {
+    setFilterParams((prev) => ({
+      ...prev,
+      [Object.keys(input)[0]]: Object.values(input)[0],
+    }));
     setCurrentPage(0);
   };
 
@@ -17,22 +20,18 @@ export const TopControls = ({ setFilterSpecies, setCurrentPage }) => {
     </div>
   );
 
-  const onSearch = (val) => {
-    console.log(val);
-  };
-
   return (
     <div className="my-5 text-base flex flex-col justify-center md:flex-row items-center">
       <Input.Search
         className="mr-5 max-w-xs m-5"
-        placeholder="input search text"
-        onSearch={onSearch}
+        placeholder="Search by name"
+        onSearch={(val) => onSearch({ name: val })}
         enterButton
       />
       <SelectField
         data={SPECIES_TYPE}
         placeholder={placeholder}
-        onChange={onChange}
+        onChange={(val) => onSearch({ species: val })}
       />
     </div>
   );

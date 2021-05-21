@@ -3,11 +3,11 @@ import { useQuery, gql } from "@apollo/client";
 import { BottomControls } from "./bottom-controls";
 import { CharacterItem } from "./character-item";
 import { TopControls } from "./top-controls";
-import { Skeleton } from "antd";
+import { Skeleton, Empty } from "antd";
 
 const GET_CHARACTERS = gql`
-  query GET_CHARACTERS($page: Int, $species: String) {
-    characters(page: $page, filter: { species: $species }) {
+  query GET_CHARACTERS($page: Int, $species: String, $name: String) {
+    characters(page: $page, filter: { species: $species, name: $name }) {
       info {
         count
         pages
@@ -32,21 +32,25 @@ const GET_CHARACTERS = gql`
 
 const CharacterList = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [filterSpecies, setFilterSpecies] = useState("");
-
+  const [filterParams, setFilterParams] = useState({ name: "", species: "" });
   const { loading, error, data } = useQuery(GET_CHARACTERS, {
-    variables: { page: currentPage, species: filterSpecies },
+    variables: {
+      page: currentPage,
+      species: filterParams.species,
+      name: filterParams.name,
+    },
   });
-
+  console.log(error?.graphQLErrors);
   return (
     <div className="h-full flex flex-col justify-between">
       <TopControls
-        setFilterSpecies={setFilterSpecies}
+        setFilterParams={setFilterParams}
         setCurrentPage={setCurrentPage}
       />
       <div className="">
-        {error && <p>`Error! ${error.message}`</p>}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+        {error && console.log("Error!", error.message, error.graphQLErrors)}
+        {!data && error && <Empty />}
+        <div className="grid grid-cols-2 md:grid-cols-5 md:grid-rows-4 gap-6">
           {loading &&
             Array(20)
               .fill(0)
