@@ -23,6 +23,12 @@ module.exports = {
       fontSize: {
         "10xl": ["10rem", { lineHeight: 1 }],
       },
+      zIndex: {
+        5: "5",
+      },
+      screens: {
+        mobile: { max: "992px" },
+      },
     },
   },
   variants: {

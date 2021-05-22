@@ -26,7 +26,7 @@ export const Home = () => {
       <div className="bg-black bg-opacity-60 w-full h-full fixed left-0 lg:left-40 top-0" />
       <button
         type="button"
-        className="absolute outline-none top-20 right-20 z-10"
+        className="absolute outline-none top-20 right-20 z-5"
         onClick={toggleMute}
       >
         <FontAwesomeIcon
@@ -36,10 +36,12 @@ export const Home = () => {
         />
       </button>
       <header className="relative flex flex-col items-center justify-center h-full font-schwifty">
-        <p className="text-5xl lg:text-8xl mb-10 text-rm-blue glow">
+        <p className="mobile:text-5xl text-8xl mb-10 text-rm-blue glow">
           Rick and Morty
         </p>
-        <p className="text-8xl lg:text-10xl text-rm-pink">TV Series Guide</p>
+        <p className="mobile:text-8xl text-10xl text-rm-pink">
+          TV Series Guide
+        </p>
       </header>
     </>
   );

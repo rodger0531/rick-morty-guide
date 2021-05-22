@@ -14,7 +14,7 @@ function App({ location }) {
     <Layout className="min-h-screen">
       <Sider
         width="300px"
-        className="flex justify-center z-10"
+        className="flex justify-center z-10 mobile:absolute mobile:h-screen "
         breakpoint="lg"
         collapsedWidth="0"
         // onBreakpoint={(broken) => {
