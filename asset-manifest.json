@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/rick-morty-guide/static/css/main.0701b52b.chunk.css",
-    "main.js": "/rick-morty-guide/static/js/main.0c2a868f.chunk.js",
-    "main.js.map": "/rick-morty-guide/static/js/main.0c2a868f.chunk.js.map",
-    "runtime-main.js": "/rick-morty-guide/static/js/runtime-main.049e6566.js",
-    "runtime-main.js.map": "/rick-morty-guide/static/js/runtime-main.049e6566.js.map",
+    "main.css": "/rick-morty-guide/static/css/main.d7545d1d.chunk.css",
+    "main.js": "/rick-morty-guide/static/js/main.5c109f56.chunk.js",
+    "main.js.map": "/rick-morty-guide/static/js/main.5c109f56.chunk.js.map",
+    "runtime-main.js": "/rick-morty-guide/static/js/runtime-main.8e773704.js",
+    "runtime-main.js.map": "/rick-morty-guide/static/js/runtime-main.8e773704.js.map",
     "static/css/2.7d81263a.chunk.css": "/rick-morty-guide/static/css/2.7d81263a.chunk.css",
-    "static/js/2.1428fa5e.chunk.js": "/rick-morty-guide/static/js/2.1428fa5e.chunk.js",
-    "static/js/2.1428fa5e.chunk.js.map": "/rick-morty-guide/static/js/2.1428fa5e.chunk.js.map",
-    "static/js/3.cb2545df.chunk.js": "/rick-morty-guide/static/js/3.cb2545df.chunk.js",
-    "static/js/3.cb2545df.chunk.js.map": "/rick-morty-guide/static/js/3.cb2545df.chunk.js.map",
+    "static/js/2.c13eab1d.chunk.js": "/rick-morty-guide/static/js/2.c13eab1d.chunk.js",
+    "static/js/2.c13eab1d.chunk.js.map": "/rick-morty-guide/static/js/2.c13eab1d.chunk.js.map",
+    "static/js/3.cf2df075.chunk.js": "/rick-morty-guide/static/js/3.cf2df075.chunk.js",
+    "static/js/3.cf2df075.chunk.js.map": "/rick-morty-guide/static/js/3.cf2df075.chunk.js.map",
     "index.html": "/rick-morty-guide/index.html",
     "static/css/2.7d81263a.chunk.css.map": "/rick-morty-guide/static/css/2.7d81263a.chunk.css.map",
-    "static/css/main.0701b52b.chunk.css.map": "/rick-morty-guide/static/css/main.0701b52b.chunk.css.map",
-    "static/js/2.1428fa5e.chunk.js.LICENSE.txt": "/rick-morty-guide/static/js/2.1428fa5e.chunk.js.LICENSE.txt",
+    "static/css/main.d7545d1d.chunk.css.map": "/rick-morty-guide/static/css/main.d7545d1d.chunk.css.map",
+    "static/js/2.c13eab1d.chunk.js.LICENSE.txt": "/rick-morty-guide/static/js/2.c13eab1d.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/rick-morty-guide/static/media/getSchwifty.c3d1dfc6.ttf",
     "static/media/homeBackground.5cc6cfe1.mp4": "/rick-morty-guide/static/media/homeBackground.5cc6cfe1.mp4",
     "static/media/logo.54e125f0.png": "/rick-morty-guide/static/media/logo.54e125f0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.049e6566.js",
+    "static/js/runtime-main.8e773704.js",
     "static/css/2.7d81263a.chunk.css",
-    "static/js/2.1428fa5e.chunk.js",
-    "static/css/main.0701b52b.chunk.css",
-    "static/js/main.0c2a868f.chunk.js"
+    "static/js/2.c13eab1d.chunk.js",
+    "static/css/main.d7545d1d.chunk.css",
+    "static/js/main.5c109f56.chunk.js"
   ]
 }
