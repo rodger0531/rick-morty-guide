@@ -7,21 +7,21 @@ export const CharacterList = ({ error, data, loading }) => {
     <div className="">
       {error && console.log("Error!", error.message, error.graphQLErrors)}
       {!data && error && !loading && <Empty />}
-      <div className="grid grid-cols-2 md:grid-cols-5 md:grid-rows-4 gap-6">
+      <div className="grid mobile:grid-cols-2 grid-cols-5 grid-rows-4 gap-6 items-center justify-items-center">
         {loading &&
           Array(20)
             .fill(0)
             .map((_, idx) => (
               <div key={`${idx}`} className="h-32 xl:h-40">
                 <Skeleton.Avatar
-                  className="rounded-xl h-36 md:h-28 xl:h-36 w-36 md:w-28 xl:w-36"
+                  className="rounded-xl mobile:h-36 h-28 xl:h-36 mobile:w-36 w-28 xl:w-36"
                   shape="square"
                   active
                 />
               </div>
             ))}
         {data?.characters.results.map((item) => (
-          <div key={item.id} className="w-36 md:w-28 xl:w-36">
+          <div key={item.id} className="mobile:w-36 w-28 xl:w-36">
             <CharacterItem data={item} />
           </div>
         ))}

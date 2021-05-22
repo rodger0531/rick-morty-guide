@@ -21,7 +21,7 @@ export const TopControls = ({ setFilterParams, setCurrentPage }) => {
   );
 
   return (
-    <div className="my-5 md:mt-10 text-base flex flex-col justify-center md:flex-row items-center">
+    <div className="my-5 md:mt-10 text-base flex mobile:flex-col justify-center flex-row items-center">
       <Input.Search
         className="max-w-xs mx-5"
         placeholder="Who are you looking for?"
@@ -29,7 +29,7 @@ export const TopControls = ({ setFilterParams, setCurrentPage }) => {
         enterButton
       />
       <SelectField
-        className="mt-3 md:mt-0"
+        className="mobile:mt-3 mt-0"
         data={SPECIES_TYPE}
         placeholder={placeholder}
         onChange={(val) => onSearch({ species: val })}

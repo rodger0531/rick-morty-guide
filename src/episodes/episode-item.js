@@ -29,7 +29,7 @@ export const EpisodeItem = ({ episodes }) => {
             title={`Episode ${episode.episode.slice(4)}`}
             className="text-left text-xl"
           >
-            <div className="flex justify-between">
+            <div className="flex justify-between mobile:flex-col">
               <p style={{ color: COLOR_PALETTE.PINK }}>{episode.name}</p>
               <p className="text-sm opacity-30 align-baseline flex items-end">
                 Aired: {episode.aired}
