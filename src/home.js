@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import video from "./assets/video/homeBackground.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeUp, faVolumeMute } from "@fortawesome/free-solid-svg-icons";
-import { COLOR_PALETTE } from "./core/constants";
 
 export const Home = () => {
   const [isMuted, setIsMuted] = useState(false);
@@ -20,11 +19,11 @@ export const Home = () => {
         src={video}
         type="video/mp4"
         className="w-full h-full fixed left-0 lg:left-40 top-0 object-cover"
-        style={{ zIndex: 0 }}
         autoPlay
         muted
         loop
       />
+      <div className="mask w-full h-full fixed left-0 lg:left-40 top-0" />
       <button
         type="button"
         className="absolute outline-none top-20 right-20"
@@ -37,8 +36,10 @@ export const Home = () => {
         />
       </button>
       <header className="relative flex flex-col items-center justify-center h-full font-schwifty">
-        <p className="text-5xl mb-10">Rick and Morty</p>
-        <p className="text-9xl">TV Series Guide</p>
+        <p className="text-5xl lg:text-8xl mb-10 text-rm-blue glow">
+          Rick and Morty
+        </p>
+        <p className="text-8xl lg:text-10xl text-rm-pink">TV Series Guide</p>
       </header>
     </>
   );

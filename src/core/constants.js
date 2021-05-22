@@ -15,7 +15,8 @@ module.exports = {
     BROWN: "#78350F",
     SALMON: "#e4a788",
     YELLOW: "#f0e14a",
-    LIME: "#97ce4c",
+    LIME: "#0abc4a",
     PINK: "#e89ac7",
+    BLUE: "#04b0c9",
   },
 };

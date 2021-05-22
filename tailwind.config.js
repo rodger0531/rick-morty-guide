@@ -15,9 +15,13 @@ module.exports = {
         "rm-salmon": COLOR_PALETTE.SALMON,
         "rm-yellow": COLOR_PALETTE.YELLOW,
         "rm-lime": COLOR_PALETTE.LIME,
+        "rm-blue": COLOR_PALETTE.BLUE,
       },
       fontFamily: {
         schwifty: "getSchwifty",
+      },
+      fontSize: {
+        "10xl": ["10rem", { lineHeight: 1 }],
       },
     },
   },
