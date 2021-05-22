@@ -19,7 +19,7 @@ const GET_EPISODES = gql`
 `;
 
 const EpisodePage = () => {
-  const { loading, error, data, fetchMore } = useQuery(GET_EPISODES, {
+  const { loading, data, fetchMore } = useQuery(GET_EPISODES, {
     variables: {
       page: 1,
     },
