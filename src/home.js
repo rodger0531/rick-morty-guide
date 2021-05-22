@@ -23,10 +23,10 @@ export const Home = () => {
         muted
         loop
       />
-      <div className="mask w-full h-full fixed left-0 lg:left-40 top-0" />
+      <div className="bg-black bg-opacity-60 w-full h-full fixed left-0 lg:left-40 top-0" />
       <button
         type="button"
-        className="absolute outline-none top-20 right-20"
+        className="absolute outline-none top-20 right-20 z-10"
         onClick={toggleMute}
       >
         <FontAwesomeIcon

@@ -14,9 +14,11 @@
 }
 
 .glow {
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #91ce26, 0 0 15px #91ce26,
+    0 0 20px #0abc4a;
+  /* -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate; */
 }
 
 @keyframes glow {
@@ -35,14 +37,6 @@ header p:first-child {
   /* text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black; */
 }
 header p:last-child {
-  -webkit-text-stroke: 2px #78350f;
+  -webkit-text-stroke: 4px #78350f;
   /* text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black; */
-}
-
-video {
-  /* z-index: -1; */
-}
-
-.mask {
-  background: rgba(0, 0, 0, 0.6);
 }
