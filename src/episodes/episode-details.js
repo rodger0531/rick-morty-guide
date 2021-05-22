@@ -49,7 +49,7 @@ const EpisodeDetails = ({ episodeID, isModalVisible, handleCancel }) => {
                 {data.episode.characters.map((character) => (
                   <Popover
                     content={
-                      <div className="text-base text-yellow-900">
+                      <div className="text-base text-rm-brown">
                         <p>
                           <b>{character.name}</b>
                         </p>

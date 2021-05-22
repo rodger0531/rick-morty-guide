@@ -6,7 +6,7 @@ export const CharacterItem = ({
   data: { image, name, species, status, gender, location },
 }) => {
   const content = (
-    <div className="text-base text-yellow-900">
+    <div className="text-base text-rm-brown">
       <p>
         <b>{name}</b>
       </p>

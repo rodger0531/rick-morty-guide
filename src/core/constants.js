@@ -12,7 +12,7 @@ module.exports = {
     "unknown",
   ],
   COLOR_PALETTE: {
-    BROWN: "#44281d",
+    BROWN: "#78350F",
     SALMON: "#e4a788",
     YELLOW: "#f0e14a",
     LIME: "#97ce4c",
