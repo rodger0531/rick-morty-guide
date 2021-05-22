@@ -64,7 +64,7 @@ function App({ location }) {
             <Route exact path={paths[0]} component={Home} />
             <Route path={paths[1]} component={CharacterPage} />
             <Route path={paths[2]} component={EpisodePage} />
-            <Route render={() => <Redirect to={{ pathname: "/" }} />} />
+            <Route render={() => <Redirect to="/" />} />
           </Switch>
         </Content>
       </Layout>

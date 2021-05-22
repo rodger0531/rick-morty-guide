@@ -2,7 +2,7 @@
   "name": "rick-and-morty",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rodger0531.github.io/rick-morty-guide/",
+  "homepage": ".",
   "dependencies": {
     "@apollo/client": "3.3.19",
     "@craco/craco": "6.1.2",
