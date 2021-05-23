@@ -1,22 +1,8 @@
 import React from "react";
-import { useQuery, gql } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { Modal, Spin, Skeleton, Avatar, Typography, Popover } from "antd";
 import { COLOR_PALETTE } from "../core/constants";
-
-const GET_EPISODE_DETAIL = gql`
-  query ($id: ID!) {
-    episode(id: $id) {
-      name
-      episode
-      aired: air_date
-      characters {
-        name
-        image
-        status
-      }
-    }
-  }
-`;
+import { GET_EPISODE_DETAIL } from "../graphql/queries";
 
 const EpisodeDetails = ({ episodeID, isModalVisible, handleCancel }) => {
   const { loading, data } = useQuery(GET_EPISODE_DETAIL, {

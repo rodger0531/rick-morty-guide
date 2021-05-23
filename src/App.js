@@ -2,7 +2,7 @@ import "./App.css";
 import { Switch, Route, NavLink, withRouter, Redirect } from "react-router-dom";
 import CharacterPage from "./characters";
 import { Layout, Menu } from "antd";
-import rickAndMortyLogo from "./logo.png";
+import rickAndMortyLogo from "./assets/logo.png";
 import { Home } from "./home";
 import EpisodePage from "./episodes";
 
@@ -17,12 +17,6 @@ function App({ location }) {
         className="flex justify-center z-10 mobile:absolute mobile:h-screen "
         breakpoint="lg"
         collapsedWidth="0"
-        // onBreakpoint={(broken) => {
-        //   console.log(broken);
-        // }}
-        // onCollapse={(collapsed, type) => {
-        //   console.log(collapsed, type);
-        // }}
       >
         <div className="flex flex-col justify-between h-full">
           <div>

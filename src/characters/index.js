@@ -1,33 +1,9 @@
 import React, { useState } from "react";
-import { useQuery, gql } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { BottomControls } from "./bottom-controls";
 import { TopControls } from "./top-controls";
 import { CharacterList } from "./character-list";
-
-const GET_CHARACTERS = gql`
-  query GET_CHARACTERS($page: Int, $species: String, $name: String) {
-    characters(page: $page, filter: { species: $species, name: $name }) {
-      info {
-        count
-        pages
-        next
-        prev
-      }
-      results {
-        name
-        id
-        species
-        gender
-        status
-        image
-        location {
-          name
-          dimension
-        }
-      }
-    }
-  }
-`;
+import { GET_CHARACTERS } from "../graphql/queries";
 
 const CharacterPage = () => {
   const [currentPage, setCurrentPage] = useState(1);

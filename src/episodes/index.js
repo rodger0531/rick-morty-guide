@@ -1,22 +1,7 @@
 import React, { useEffect } from "react";
-import { useQuery, gql } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { EpisodesList } from "./episodes-list";
-
-const GET_EPISODES = gql`
-  query ($page: Int) {
-    episodes(page: $page) {
-      info {
-        next
-      }
-      results {
-        id
-        name
-        episode
-        aired: air_date
-      }
-    }
-  }
-`;
+import { GET_EPISODES } from "../graphql/queries";
 
 const EpisodePage = () => {
   const { loading, data, fetchMore } = useQuery(GET_EPISODES, {
